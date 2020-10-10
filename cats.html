@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/01-reset.css">
+    <link rel="stylesheet" href="css/02-variables.css">
+    <link rel="stylesheet" href="css/03-typography.css">
+    <link rel="stylesheet" href="css/04-utilities.css">
+    <link rel="stylesheet" href="css/05-style.css">
+    
+</head>
+<body class="bg-neutral-100">
+    <!-- navigation -->
+    <section class="grid bg-white">
+        <header class="header">
+            <img class="logo" src="assets/images/logo-horizontal.svg" alt="logo" />
+            <nav class="nav">
+                <a href="#" class="nav__item"><ul >Cats</ul></a>
+                <a href="#" class="nav__item"><ul >Dogs</ul></a>
+                <a href="#" class="nav__item"><ul >Accessories</ul></a>
+                <a href="index.html" class="nav__item"><img  src="assets/images/cart.svg" alt="shopping cart"></a>
+            </nav>
+        </header>
+    </section>
+    <!-- end navigation -->
+
+    <!-- category-header -->
+    <section class="category-header">
+        <div class="category-header__content">
+            <h1 class="c-white mb-0">Cats</h1>
+        </div>
+    </section>
+    <!-- end category-header -->
+
+
+    <!-- category-header -->
+    <main class="category grid">
+        <p class="mt-5 span-12">Home / Cats</p>
+        <div class="category__sidebar">
+            <h2 class="mt-5">Filter</h2>
+            <div class="mb-6" id="sizes">
+                <label class="h3">Size</label>
+                <ul class="checkbox-list">
+                    <li><input type="checkbox"> Tiny</li>
+                    <li><input type="checkbox"> Small</li>
+                    <li><input type="checkbox"> Medium</li>
+                    <li><input type="checkbox"> Large</li>
+                </ul>
+            </div>
+
+            <div class="mb-6" id="colors">
+                <label class="h3">Color</label>
+                <ul class="checkbox-list">
+                    <li><input type="checkbox"> Strawberry</li>
+                    <li><input type="checkbox"> Blackberry</li>
+                    <li><input type="checkbox"> Crazyberry</li>
+                    <li><input type="checkbox"> Fire Orange</li>
+                    <li><input type="checkbox"> Lightberry</li>
+                    <li><input type="checkbox"> Teal</li>
+                </ul>
+            </div>
+        </div>
+        <div class="category__content">
+            <div class="my-5">
+                <a class="c-off-black" href="/cat-harness.html">
+                    <img src="assets/images/cat-1.png" />
+                    <h3 class="mb-1">Cat Harness</h3>
+                    <p class="mb-2">$125 • Strawberry</p>
+                </a>
+                <div>
+                    <span class="color-box color-box--strawberry"></span>
+                    <span class="color-box color-box--blackberry"></span>
+                    <span class="color-box color-box--crazyberry"></span>
+                    <span class="color-box color-box--fire-orange"></span>
+                </div>
+            </div>
+            <div class="my-5">
+                <a class="c-off-black" href="#">
+                    <img src="assets/images/cat-2.png" />
+                    <h3 class="mb-1">Water Storage Pack</h3>
+                    <p class="mb-2">$125 • Strawberry</p>
+                </a>
+                <div>
+                    <span class="color-box color-box--strawberry"></span>
+                    <span class="color-box color-box--blackberry"></span>
+                    <span class="color-box color-box--crazyberry"></span>
+                    <span class="color-box color-box--fire-orange"></span>
+                    <span class="color-box color-box--lightberry"></span>
+                    <span class="color-box color-box--teal"></span>
+                </div>
+            </div>
+            <div class="my-5">
+                <a class="c-off-black" href="#">
+                    <img src="assets/images/cat-3.png" />
+                    <h3 class="mb-1">Food Storage Pack</h3>
+                    <p class="mb-2">$125 • Strawberry</p>
+                </a>
+                <div>
+                    <span class="color-box color-box--strawberry"></span>
+                    <span class="color-box color-box--blackberry"></span>
+                    <span class="color-box color-box--crazyberry"></span>
+                    <span class="color-box color-box--fire-orange"></span>
+                    <span class="color-box color-box--lightberry"></span>
+                    <span class="color-box color-box--teal"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- end category-header -->
+
+
+   
+
+    <!-- footer -->
+    <footer class="bg-off-black py-7">
+        <div class="grid">
+            <div class="span-12 grid">
+                <nav class="span-3">
+                    <p class="footer__title">Shop</p>
+                    <ul class="footer__nav">
+                        <a class="nav__item" href="#"><li class="footer__item">Cats</li></a>
+                        <a class="nav__item" href="#"><li class="footer__item">Dogs</li></a>
+                        <a class="nav__item" href="#"><li class="footer__item">Accessories</li></a>
+                    </ul>
+                </nav>
+                <nav class="span-3">
+                    <p class="footer__title">Information</p>
+                    <ul class="footer__nav">
+                        <a class="nav__item" href="#"><li class="footer__item">Contact</li></a>
+                        <a class="nav__item" href="#"><li class="footer__item">Bulk Order</li></a>
+                    </ul>
+                </nav>
+                <nav class="span-3">
+                    <p class="footer__title">Terms</p>
+                    <ul class="footer__nav">
+                        <a class="nav__item" href="#"><li class="footer__item">Privacy Policy</li></a>
+                        <a class="nav__item" href="#"><li class="footer__item">Terms of Service</li></a>
+                    </ul>
+                </nav>
+                <nav class="span-3">
+                    <p class="footer__title">Contact</p>
+                    <a class="nav__item" href="#"><p class="footer__item">5032 Forbes Ave.<br />Pittsburgh, PA 15213</p></a>
+                </nav>
+            </div>
+            
+            <div class="span-12 text-center">
+                <img class="footer__logo mt-7 mb-4" src="assets/images/logo.svg" alt="paw logo">
+                <small class="display-block c-white">&copy; Muddy Paws Adventure Gear</small>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+</body>
+</html>

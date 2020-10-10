@@ -33,8 +33,13 @@
     margin-right: 0;
 }
 
+.logo {
+    width: var(--space-10);
+}
+
 /* hero */
 .hero {
+    position: relative;
     width: 100vw;
     height: 90vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/cat-harness.jpeg");
@@ -100,3 +105,134 @@ img {
 .home-section__img--1 { grid-column: 6 / span 6; }
 .home-section__img--2 { grid-column: 2 / span 6; }
 .home-section__img--3 { grid-column: 6 / span 6; }
+
+/* footer */
+footer {
+    background: var(--off-black);
+}
+
+.footer__logo {
+    width: 80px;
+}
+
+.footer__title {
+    font-family: 'DIN';
+    margin-bottom: var(--space-5);
+    text-transform: uppercase;
+    color: white;
+}
+
+.footer__nav {
+    list-style-type: none;
+}
+
+.footer__item {
+    color: white;
+    opacity: 0.8;
+    margin-bottom: var(--space-3);
+}
+
+.footer__item:hover {
+    opacity: 1;
+}
+
+/* ============================== */
+
+/* category-header */
+.category-header {
+    position: relative;
+    width: 100vw;
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/cat-harness.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--off-black); /* if img not available */
+}
+
+.category-header__content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.category__sidebar {
+    grid-column: span 2;
+}
+
+
+.category__content {
+    grid-column: span 8;
+}
+
+.checkbox-list {
+    list-style: none;
+}
+
+.color-box {
+    display: inline-block;
+    height: 40px;
+    width: 50px;
+}
+
+.color-box--strawberry { background-color: var(--strawberry); }
+.color-box--blackberry { background-color: var(--blackberry); }
+.color-box--crazyberry { background-color: var(--crazyberry); }
+.color-box--fire-orange { background-color: var(--fire-orange); }
+.color-box--lightberry { background-color: var(--lightberry); }
+.color-box--teal { background-color: var(--teal); }
+
+
+/* ============================== */
+
+/* product */
+.product {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(50% 50% at 50% 50%, #333333 0%, #000000 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--off-black); /* if img not available */
+}
+
+.product__controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.product__img {
+    width: 60%;
+}
+
+.product-select {
+    padding: var(--space-3);
+    color: white;
+    background-color: var(--neutral-900);
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* flex */
+.flex-justify-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex-justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-justify-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
