@@ -1,0 +1,102 @@
+.header {
+    grid-column: 1 / -1;
+    height: var(--space-8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: absolute;
+    width: 90%;
+}
+
+/* navigation */
+.nav {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    display: inline;
+    margin-right: var(--space-6);
+    color: white;
+    font-family: "DIN";
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.nav__item:hover {
+    opacity: 1;
+}
+
+.nav__item:last-child {
+    margin-right: 0;
+}
+
+/* hero */
+.hero {
+    width: 100vw;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/cat-harness.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--off-black); /* if img not available */
+}
+
+.hero__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* buttons */
+.btn {
+    padding: var(--space-3) var(--space-6);
+    background: transparent;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn--primary {
+    border: 2px solid var(--neutral-100);
+    color: white;
+}
+
+.btn--secondary {
+    border: 2px solid var(--off-black);
+    color: var(--off-black);
+}
+
+/* images */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* home sections */
+.home-section {
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-8);
+}
+
+.home-section__blurb {
+    padding: var(--space-8) var(--space-5);
+    background-color: white;
+    z-index: 10;
+}
+
+.home-section__img {
+    z-index: 1;
+}
+
+.home-section__blurb--1 { grid-column: 2 / span 5; }
+.home-section__blurb--2 { grid-column: 7 / span 5; }
+.home-section__blurb--3 { grid-column: 2 / span 5; }
+.home-section__img--1 { grid-column: 6 / span 6; }
+.home-section__img--2 { grid-column: 2 / span 6; }
+.home-section__img--3 { grid-column: 6 / span 6; }
