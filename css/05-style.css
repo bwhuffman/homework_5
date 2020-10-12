@@ -40,7 +40,6 @@
 /* hero */
 .hero {
     position: relative;
-    width: 100vw;
     height: 90vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/cat-harness.jpeg");
     background-position: center;
@@ -213,9 +212,24 @@ footer {
 /* category-header */
 .category-header {
     position: relative;
-    width: 100vw;
     height: 40vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/cat-harness.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--off-black); /* if img not available */
+}
+
+.category-header--dogs {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/dogs-header.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--off-black); /* if img not available */
+}
+
+.category-header--accessories {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/accessories-header.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
